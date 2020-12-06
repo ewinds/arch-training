@@ -72,7 +72,7 @@ public class StressTest {
       System.out.println(
           String.format(
               "95%% 响应时间是：%d 毫秒",
-              (long) allResponseTime.stream().sorted().toArray()[(int) Math.ceil(100 * 0.95)]));
+              (long) allResponseTime.stream().sorted().toArray()[(int) Math.ceil(times * 0.95)]));
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
